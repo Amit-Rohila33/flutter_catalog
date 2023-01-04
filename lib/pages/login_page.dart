@@ -65,7 +65,13 @@ class _LoginPageState extends State<LoginPage> {
                           return null;
                         },
                         decoration: InputDecoration(
-                            hintText: "Enter Username", labelText: "Username"),
+                          hintText: "Enter Username",
+                          labelText: "Username",
+                          icon: Icon(
+                            Icons.account_circle_outlined,
+                            color: Colors.orange,
+                          ),
+                        ),
                       ),
                       TextFormField(
                         obscureText: true,
@@ -78,7 +84,13 @@ class _LoginPageState extends State<LoginPage> {
                           return null;
                         },
                         decoration: InputDecoration(
-                            hintText: "Enter Password", labelText: "Password"),
+                          hintText: "Enter Password",
+                          labelText: "Password",
+                          icon: Icon(
+                            Icons.lock,
+                            color: Colors.orange,
+                          ),
+                        ),
                       ),
                       SizedBox(
                         height: 20.0,
